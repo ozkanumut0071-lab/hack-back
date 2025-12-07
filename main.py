@@ -84,7 +84,12 @@ app.add_middleware(
         "http://localhost:3000",  # React dev server
         "http://localhost:5173",  # Vite dev server
         "http://localhost:8080",  # Alternative frontend port
-        # Add production domains here
+        # Vercel Production
+        "https://hack-front.vercel.app",
+        "https://*.vercel.app",
+        # Render Production
+        "https://hack-back.onrender.com",
+        "https://*.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
